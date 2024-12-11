@@ -57,7 +57,7 @@ struct ContentView: View {
     }
 }
 
-// Reusable Button Component
+// Reusable Button struct
 struct CustomButton: View {
     let title: String
     let color: Color
