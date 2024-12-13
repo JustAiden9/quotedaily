@@ -17,16 +17,6 @@ struct ContentView: View {
                 Image("logo")
                     .resizable()
                     .frame(width: 100, height: 100)
-                    .rotationEffect(.degrees(rotation)) // Apply rotation effect
-                    .animation(
-                        Animation.linear(duration: 5) // Fake duration, to have it spin for
-                            .repeatForever(autoreverses: false), // Allows the logo to spin without bounceback
-                        value: rotation // Calling back the @State var for rotation
-                    )
-                    .onAppear {
-                        rotation = 360 // Start spinning when the view appears
-                    }
-                
                 // App title
                 Text("Welcome to QuoteDaily")
                     .font(.title)
