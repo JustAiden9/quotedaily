@@ -31,8 +31,8 @@ struct ContentView: View {
                 
                 // Buttons
                 VStack(spacing: 20) {
-                    NavigationLink(destination: CarsonView(color: .blue)) {
-                        CustomButton(title: "Carson", color: .blue)
+                    NavigationLink(destination: CarsonView(color: .blue)) { // color: .blue corosponds to the text color in CarsonView
+                        CustomButton(title: "Carson", color: .blue) // color for the button!
                     }
                     
                     NavigationLink(destination: RohanView(color: .green)) {
