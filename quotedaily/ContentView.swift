@@ -16,6 +16,7 @@ struct ContentView: View {
                 Image("logo")
                     .resizable()
                     .frame(width: 100, height: 100)
+                
                 // App title
                 Text("Welcome to QuoteDaily")
                     .font(.title)
@@ -32,7 +33,7 @@ struct ContentView: View {
                 // Buttons
                 VStack(spacing: 20) {
                     NavigationLink(destination: CarsonView(color: .blue)) { // color: .blue corosponds to the text color in CarsonView
-                        CustomButton(title: "Carson", color: .blue) // color for the button!
+                        CustomButton(title: "Carson", color: .blue) // color for the button! ALL THE SAME FOR BELOW!
                     }
                     
                     NavigationLink(destination: RohanView(color: .green)) {
