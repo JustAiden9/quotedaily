@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedColor: Color = .white
-    @State private var rotation: Double = 0
     var body: some View {
         NavigationStack {
             VStack(alignment: .center) {
@@ -35,7 +34,6 @@ struct ContentView: View {
                     NavigationLink(destination: CarsonView(color: .blue)) {
                         CustomButton(title: "Carson", color: .blue)
                     }
-                    
                     
                     NavigationLink(destination: RohanView(color: .green)) {
                         CustomButton(title: "Rohan", color: .green)

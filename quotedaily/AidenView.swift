@@ -38,7 +38,7 @@ struct AidenView: View {
             // Daily quote in the middle
             Text(quotes.randomElement() ?? "No") // If no quote is found "No" will be shown
                 .font(.title)
-                .foregroundColor(color)
+                .foregroundColor(color) // Pulling from the let variable and that let is pulling from the content view file
                 .multilineTextAlignment(.center)
                 .padding()
 
